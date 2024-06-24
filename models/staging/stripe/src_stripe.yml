@@ -2,10 +2,12 @@ version: 2
 
 sources:
   - name: stripe
+    description: a clone for snowflake stripe schema.
     database: raw
     schema: stripe
     tables:
       - name: payment
+        description: payment details.
         loaded_at_field: _batched_at
         freshness: 
           error_after:
